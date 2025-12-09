@@ -40,4 +40,25 @@ body{
 .navbar li a:hover {
   background-color: #2C415B;
 }
+.avaliação{
+  display: flex;
+}
 
+.star-icon{
+  list-style-type: none;
+  border: 1px;
+  cursor: pointer;
+  color:white;
+}
+.star-icon::before{
+  content:"\2605"
+}
+.star-icon-ativo ~ .star.icon::before{
+  content: "\2606";
+}
+.star-icon:hover ~ .star-icon::before{
+  content: "\2605";
+}
+.star-icon:hover ~ .star-icon::before{
+  content: "\2606";
+}
