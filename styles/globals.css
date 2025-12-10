@@ -5,6 +5,7 @@
 }
 h1{
     color: #ffffff;
+    font-family: 'Jersey 20';
 }
 body{
     font-family: 'arial';
@@ -47,6 +48,8 @@ body{
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  margin-bottom: -100px;
+  margin-top: -150px;
 }
 
 .container-images {
@@ -54,7 +57,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 700px;
+  width: 1000px;
 }
 
 .slider {
@@ -84,4 +87,72 @@ body{
 
 #prev-button {
   transform: rotate(180deg);
+}
+
+
+.populares{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+  list-style-type: none;
+  color: white;
+}
+p{
+  color: white;
+  font-family: 'Jersey 20';
+}
+.rodape h1{
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+hr{
+    width: 1550px;
+    height: 1px;
+    border: 0px;
+    border-top: 4px solid white;
+    margin: 5px auto; 
+}
+.rodape hr{
+  width: 100%;
+}
+p{
+  margin-top: -8px;
+  float:left;
+  font-size: 25px;
+}
+
+.RDR2{
+  margin-top:  30px;
+  width: 200px;
+  height: 350px;
+}
+.cyberpunk{
+  margin-top:  30px;
+  width: 200px;
+  height: 350px;
+}
+.DLthebeast{
+  margin-top:  30px;
+  width: 200px;
+  height: 350px;
+}
+.BAK{
+  margin-top:  30px;
+  width: 200px;
+  height: 350px;
+}
+.GTAV{
+  margin-top:  30px;
+  width: 200px;
+  height: 350px;
+}
+.TR{
+  margin-top:  30px;
+  width: 200px;
+  height: 350px;
 }
