@@ -1,7 +1,3 @@
-Miguel Augusto: https://github.com/miguelaugusto22
-
-Luís Henrique Anjos: https://github.com/LuisHenrique-Morgan
-
 # GamerBoxd por Luís Henrique e Miguel Augusto
 
 ### Projeto desenvolvido como parte do minicurso de Desenvolvimento Web para a EPIC.
