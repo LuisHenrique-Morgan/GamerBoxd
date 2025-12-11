@@ -1,0 +1,96 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gamerboxd</title>
+        <link rel="stylesheet" href="styles/forms.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navbar-content">
+                <h1>GAMER<span>BOXD</span></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="search.html">Jogos</a></li>
+                        <li><a href="about.html">Sobre</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#account">Conta</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <main class="container">
+
+            <h1 class="page-title">Adicionar Jogo</h1>
+
+            <div class="form-wrapper">
+                <form id="game-form" class="game-form" novalidate>
+                    <div class="form-group">
+                        <label for="game-name">Nome do jogo (Original) *</label>
+                        <input id="game-name" name="game-name" type="text" placeholder="Ex: Hollow Knight" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="release-date">Data de lançamento *</label>
+                            <input id="release-date" name="release-date" type="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="developer">Empresa desenvolvedora *</label>
+                            <input id="developer" name="developer" type="text" placeholder="Ex: Team Cherry" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="rating">Classificação *</label>
+                            <input id="rating" name="rating" type="text" placeholder="Ex: PEGI 12 / ESRB T" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="personal-score">Avaliação pessoal (0–10)</label>
+                            <input id="personal-score" name="personal-score" type="number" min="0" max="10" step="0.1" placeholder="8.5">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Descrição do jogo *</label>
+                        <textarea id="description" name="description" rows="4" placeholder="Breve descrição sobre o jogo..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="image-url">Imagem (URL) *</label>
+                        <input id="image-url" name="image-url" type="url" placeholder="https://exemplo.com/imagem.jpg" required>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="reset" class="reset-button">Limpar</button>
+                        <button type="submit" class="submit-button">Salvar jogo</button>
+                    </div>
+                </form>
+
+                <aside class="image-upload">
+                    <label>Pré-visualização</label>
+                    <div class="image-preview">
+                        <img id="preview" src="#" alt="Pré-visualização" style="display:none;">
+                        <p id="no-image-text">Nenhuma imagem selecionada</p>
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <div id="toast">
+            <div class="toast-container">
+                <div class="toast-content">
+                    <p class="toast-title"></p>
+                    <p class="toast-message"></p>
+                </div>
+                <button id="closeToast" aria-label="Fechar">✕</button>
+            </div>
+        </div>
+        <script src="javascript/forms.js"></script>
+    </body>
+</html>
