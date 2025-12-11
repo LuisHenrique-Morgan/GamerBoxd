@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  user-select: none;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1B2838;
+  color: #c7d5e0;
+}
+
+.navbar {
+  background-color: #171a21;
+  padding: 16px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  user-select: none;
+}
+
+.navbar-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Jersey 20", sans-serif;
+}
+
+h1 span {
+  color: #66c0f4;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+}
+
+nav ul li a {
+  display: block;
+  color: #c7d5e0;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #2C415B;
+  color: #ffffff;
+}
+
+.hero-banner {
+  background: linear-gradient(135deg, #2a475e 0%, #1B2838 100%);
+  padding: 60px 20px;
+  margin-bottom: 40px;
+}
+
+.hero-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-text h2 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-text h2 span span{
+  color: #66c0f4;
+}
+
+.hero-text p {
+  color: #c7d5e0;
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  transform: rotate(5deg);
+}
+
+.hero-images img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.filter-btn {
+  background-color: #2C415B;
+  color: #c7d5e0;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background-color: #66c0f4;
+  color: #ffffff;
+}
+
+.featured-game {
+  margin-bottom: 60px;
+}
+
+.featured-game img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.featured-game h2 {
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.featured-game p {
+  color: #c7d5e0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.section-title {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #2C415B;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.game-card {
+  background-color: #1e2329;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.game-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+.game-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.game-card-info {
+  padding: 12px;
+}
+
+.game-card-title {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.game-rating {
+  display: flex;
+  gap: 4px;
+  color: #ffd700;
+  font-size: 12px;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.review-card {
+  background-color: #2C415B;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+}
+
+.review-header {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.review-header img {
+  width: 80px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.review-info h3 {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.review-info p {
+  color: #c7d5e0;
+  font-size: 12px;
+}
+
+.review-text {
+  color: #c7d5e0;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.review-meta {
+  color: #8b98a5;
+  font-size: 12px;
+}
+
+.footer {
+  background-color: #171a21;
+  padding: 40px 0;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.footer h1 {
+  font-size: 32px;
+}
+
+@media (max-width: 968px) {
+  .hero-content {
+      grid-template-columns: 1fr;
+  }
+
+  .hero-images {
+      transform: none;
+  }
+
+  .navbar-content {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      flex-wrap: wrap;
+  }
+
+  .games-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .reviews-grid {
+      grid-template-columns: 1fr;
+  }
+}
