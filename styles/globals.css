@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Jersey+20&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 h1{
     color: #ffffff;
-    font-family: 'Jersey 20';
+    font-family: "Jersey 20", sans-serif;
 }
 body{
     font-family: 'arial';
@@ -20,13 +22,13 @@ body{
 
 .navbar{
   width: 100%;
-  max-width: 1200px;
   margin: auto;
   padding: 12px 20px;
-
+  background-color: #223246;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 600px;
 }
 .navbar li {
   float: left;
@@ -98,10 +100,26 @@ body{
   margin-bottom: 4px;
   list-style-type: none;
   color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: "Caprasimo", serif;
 }
-p{
+p, a{
   color: white;
-  font-family: 'Jersey 20';
+  font-family: "Caprasimo", serif;
+}
+.separador{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.separador hr{
+  width: 71%;
+  justify-content: center;
+  align-items: center;
+}
+.separador p{
+  margin-left: 275px;
 }
 .rodape h1{
   justify-content: center;
