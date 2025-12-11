@@ -16,17 +16,12 @@ body{
     padding: 0;
 }
 
-.header-inner-content{
-    max-width: 1300px;
-}
-
 .navbar{
   width: 100%;
-  margin: auto;
   padding: 12px 20px;
+  margin-bottom: 30px;
   background-color: #223246;
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
   gap: 600px;
 }
@@ -42,6 +37,12 @@ body{
 }
 .navbar li a:hover {
   background-color: #2C415B;
+}
+.navbar ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 .container-slider {
   display: flex;
@@ -109,17 +110,16 @@ p, a{
   font-family: "Caprasimo", serif;
 }
 .separador{
+  width: 72%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.separador hr{
   width: 100%;
   justify-content: center;
   align-items: center;
-}
-.separador hr{
-  width: 71%;
-  justify-content: center;
-  align-items: center;
-}
-.separador p{
-  margin-left: 275px;
+  opacity: 70%;
 }
 .rodape h1{
   justify-content: center;
@@ -136,6 +136,9 @@ hr{
     margin: 5px auto; 
 }
 .rodape hr{
+  width: 100%;
+}
+.rodape{
   width: 100%;
 }
 p{
